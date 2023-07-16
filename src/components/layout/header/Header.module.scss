@@ -1,0 +1,51 @@
+.header {
+	padding: 1rem 0;
+	background-color: var(--black-1);
+}
+
+.header__logo {
+	display: block;
+	margin-right: auto;
+	color: var(--teal-1);
+	font-weight: 700;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
+
+.header_nav {
+	display: flex;
+	&:not(:last-child) {
+		margin-right: 2rem;
+	}
+}
+
+.header_nav__list {
+	display: flex;
+	align-items: center;
+}
+
+.header_nav__item {
+	display: block;
+	&:not(:last-child) {
+		margin-right: 2rem;
+	}
+}
+
+.header_nav__link {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--white);
+	text-decoration: none;
+
+	transition: color .3s ease-in-out;
+	&:hover,
+	&:focus {
+		color: var(--teal-2);
+	}
+}

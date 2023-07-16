@@ -1,0 +1,35 @@
+.preloader {
+	margin: 1rem auto;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 1rem;
+	background-color: #7ae0cc;
+	overflow: hidden;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--teal-1);
+		transform: translateX(-100%);
+		animation: linear_loader linear 3s infinite;
+	}
+}
+
+@keyframes linear_loader {
+	0% {
+		transform: translateX(-100%); 
+		// width: 10%;
+	}
+	50% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}

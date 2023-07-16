@@ -1,0 +1,14 @@
+.footer {
+	padding: 2rem 0;
+	background-color: var(--black-1);
+	color: var(--white);
+}
+
+.footer__container {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__copyright {
+	font-weight: 500;
+}

@@ -1,0 +1,86 @@
+@import-normalize;
+
+:root {
+	--gl-indent: 2rem;
+
+	--white: #ffffff;
+	--black: #000000;
+	--black-1: #20232A;
+	--black-2: #292D3E;
+	--gray-1: #f1f1f1;
+	--gray-2: #adadad;
+	--teal-1: #09d3ac;
+	--teal-2: #2edab8;
+	--blue-1: #007bff;
+	--blue-2: #0069d9;
+	--red-1: #dc3545;
+	--red-2: #c82333;
+
+}
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	position: relative;
+
+	display: flex;
+	height: 100%;
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	font-size: 1.6rem;
+	color: var(--black-2);
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+#root {
+	position: relative;
+
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+
+	display: flex;
+	flex-direction: column;
+
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 124rem;
+
+	margin: 0 auto;
+	padding: 0 var(--gl-indent);
+}
+
+.Toastify .Toastify__toast-theme--light {
+	background-color: var(--black-1);
+	color: var(--teal-1);
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+.Toastify .Toastify__progress-bar-theme--light {
+	background: unset;
+	background-color: var(--teal-1);
+}

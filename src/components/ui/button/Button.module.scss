@@ -1,0 +1,45 @@
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.8rem 1.5rem;
+	height: 3.5rem;
+	min-width: 5rem;
+	border-radius: 0.5rem;
+	text-align: center;
+	cursor: pointer;
+	border: 0;
+	transition: background-color .225s ease-in-out;
+	&.btn--primary_mod {
+		color: var(--white);
+		background-color: var(--teal-2);
+		&:not(:disabled):hover,
+		&:not(:disabled):focus {
+			background-color: var(--teal-1);
+		}
+	}
+
+	&.btn--danger_mod {
+		color: var(--white);
+		background-color: var(--red-1);
+		&:not(:disabled):hover,
+		&:not(:disabled):focus {
+			background-color: var(--red-2);
+		}
+	}
+
+	&:disabled {
+		background-color: #b3afaf;
+		pointer-events: none;
+		cursor: initial;
+	}
+	svg {
+		width: 1.5rem;
+		height: 1.5rem;
+		display: inline-flex;
+		&:not(:last-child) {
+			margin-right: 0.5rem;
+		}
+	}
+}
+

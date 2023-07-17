@@ -1,6 +1,6 @@
 {
   "name": "simple-react-shop",
-	"honepage": "https://alxkravchenko.github.io/simple-react-shop",
+	"homepage": "https://alxkravchenko.github.io/simple-react-shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -12,7 +12,7 @@ const Header = () => {
 				<nav className={styles['header_nav']}>
 					<ul className={styles['header_nav__list']}>
 						<li className={styles['header_nav__item']}>
-							<a href="https://github.com/alxkravchenko/movies-catalog" target='_blank' rel='noreferrer' className={styles['header_nav__link']}>Repo</a>
+							<a href="https://github.com/alxkravchenko/simple-react-shop" target='_blank' rel='noreferrer' className={styles['header_nav__link']}>Repo</a>
 						</li>
 					</ul>
 				</nav>

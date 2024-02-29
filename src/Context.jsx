@@ -57,26 +57,6 @@ const Context = (props) => {
 		setOrder([...result]);
 	};
 
-	// const addToCart = (id) => {
-	// 	const item = products?.find((product) => product.id === id);
-	// 	if (isInOrder(item.id)) {
-	// 		return false;
-	// 	} else {
-	// 		const {id, name, price} = item;
-	// 		const newItem = {
-	// 			id,
-	// 			name,
-	// 			price,
-	// 			cartQuantity: 1,
-	// 		}
-	// 		setOrder((prev) => {
-	// 			const result = [...prev, newItem]
-	// 			console.log(result);
-	// 			return setOrder(result);
-	// 		});
-	// 	}
-	// }
-
 	const addToCart = (id) => {
 		const item = products?.find((product) => product.id === id);
 		if (isInOrder(item.id)) {
@@ -89,12 +69,6 @@ const Context = (props) => {
 				price,
 				cartQuantity: 1,
 			};
-			//some issue with using setOrder callback func with react-toastify
-			// 		setOrder((prev) => {    
-			// 			const result = [...prev, newItem]
-			// 			console.log(result);
-			// 			return setOrder(result);
-			// 		});
 			setOrder([...order, newItem]);
 		}
 	};
@@ -122,7 +96,7 @@ const Context = (props) => {
 
 	return (
 		<ShopContext.Provider value={value}>
-			{props.children} {/*данные этого контекста будут доступны всем потомкам этого контекста*/}
+			{props.children}
 		</ShopContext.Provider>
 	);
 };
